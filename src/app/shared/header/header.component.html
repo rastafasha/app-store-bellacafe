@@ -1,0 +1,71 @@
+<header class="header">
+    <!--menu desktop-->
+    <div class="wrap d-flex">
+
+        <nav class="menu">
+            <ul>
+                <li><a [routerLink]="['/app/']" routerLinkActive="active">Home</a></li>
+                <li><a [routerLink]="['/app/admin']" routerLinkActive="active">Admin</a></li>
+                <li><a [routerLink]="['/app/store']" routerLinkActive="active">Store</a></li>
+                <li><a [routerLink]="['/app/orders']" routerLinkActive="active">Mis Pedidos</a></li>
+                <li><a [routerLink]="['/app/profile']" routerLinkActive="active">Profile</a></li>
+                <li><a [routerLink]="['/app/wallet']" routerLinkActive="active">Wallet</a></li>
+                <li><a [routerLink]="['/app/settings']" routerLinkActive="active">Settings</a></li>
+                <li><a [routerLink]="['/app/about-us']" routerLinkActive="active">About Us</a></li>
+                <li><a [routerLink]="['/app/terms']" routerLinkActive="active">Terms & Cond.</a></li>
+                <li><a (click)="logout()" class="cursor">Logout</a></li>
+            </ul>
+        </nav>
+    </div>
+    <!--menu movil-->
+    <!--menu-->
+    <a class="sidemenu-toggler isqmenu1" (click)="openMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+    </a>
+
+    <div class="sidemenu" (mouseout)="closeMenu()">
+        <a class="close" (click)="closeMenu()"></a>
+        <div class="usermenu">
+
+            <div class="user-header-top">
+                <a [routerLink]="['/app/']">
+                    <img src="assets/svg/Logo-BellaCafeFinal.svg" alt="">
+                </a>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <li><a routerLink="/app/" routerLinkActive="active">Home</a></li>
+                <li><a routerLink="/app/admin" routerLinkActive="active">Admin</a></li>
+                <li><a routerLink="/app/store" routerLinkActive="active">Store</a></li>
+                <li><a routerLink="/app/orders" routerLinkActive="active">Mis Pedidos</a></li>
+                <li><a routerLink="/app/profile" routerLinkActive="active">Profile</a></li>
+                <li><a routerLink="/app/wallet" routerLinkActive="active">Wallet</a></li>
+                <li><a routerLink="/app/settings" routerLinkActive="active">Settings</a></li>
+                <li><a routerLink="/app/about-us" routerLinkActive="active">About Us</a></li>
+                <li><a routerLink="/app/terms" routerLinkActive="active">Terms & Cond.</a></li>
+                <li><a (click)="logout()" class="cursor">Logout</a></li>
+            </ul>
+        </nav>
+        <div class="footer-menu">
+
+            <p>{{year}}</p>
+        </div>
+    </div>
+    <!--menu movil-->
+
+    <div class="menu-top">
+
+        <div class="isqmenu3">
+            <div class="user-header-top ">
+                <a [routerLink]="['/app/profile']">
+                    <img src="{{usuario.imagenUrl}}" alt="">
+                </a>
+            </div>
+        </div>
+
+
+    </div>
+</header>

@@ -1,0 +1,120 @@
+<section class="page cart user">
+    <div class="butonBack">
+        <a href="javascript:void(0)" (click)="goBack()"><i class="fa fa-angle-left"></i></a>
+    </div>
+    <div class="titlePage">
+        <h3>Cart Detail</h3>
+    </div>
+
+    <div *ngIf="cartItems.length < 1">
+        <div class="alert alert-info text-center">
+            <h4>Your Cart is empty</h4>
+        </div>
+    </div>
+    <div *ngIf="cartItems.length > 0">
+
+        <!--list of products mobile-->
+        <app-product-order></app-product-order>
+        <!--list of products mobile-->
+        <!--cuadromodal-->
+        <div class="container-fluid cuadro-modal animated fadeInUp">
+            <div class="total">
+                <p>Sub-total: ${{total}}</p>
+            </div>
+            <div class="lineamedio"></div>
+            <div class="row">
+
+                <div class="areagris">
+                </div>
+
+                <div class="areablanc areablanc-interna animated fadeInUp">
+
+
+                    <div class="div-responsive1">
+
+
+                        <!--list of products desktop-->
+                        <!-- <app-product-order></app-product-order> -->
+                        <!--list of products desktop-->
+
+
+                        <div class="col-auto mb-2">
+                            <input class="form-control form-control-md cuponInput" type="text" placeholder="Posee Cupón de Descuento?" aria-label=".form-control-lg example">
+                        </div>
+
+                        <div class="clear"></div>
+
+                        <hr>
+                        <div class="info-product animated fadeInUp ">
+
+                            <div class="cardsmall   itemFav shadow p-3">
+                                <h2>Shopping Bill</h2>
+                                <div class="clear"></div>
+                                <table>
+                                    <tbody>
+                                        <tr>
+                                            <td style="color: #000">Delivery zone Name</td>
+                                            <td style="color: #000" align="right">$5.00</td>
+                                        </tr>
+
+                                        <tr>
+                                            <td style="color: #000">Descuento Cupon Total</td>
+                                            <td style="color: #000" align="right">$13.00</td>
+                                        </tr>
+                                        <tr>
+                                            <td style="color: #000">Sub Total</td>
+                                            <td style="color: #000" align="right">$4.00</td>
+                                        </tr>
+                                    </tbody>
+
+                                    <tfoot style="border-top: 1px solid #000; height: 50px;">
+                                        <tr>
+                                            <td style="color: #000">Total</td>
+                                            <td style="color: #000" align="right">$53.00</td>
+                                        </tr>
+                                    </tfoot>
+                                </table>
+                            </div>
+                            <br>
+
+                            <a routerLink="/app/login-register">
+                                <button class="boton-brown w-100">Continue</button>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                    <div class="div-responsive2">
+
+                        <div class="lateral">
+                            <div class="group  itemFav shadow">
+                                <img src="assets/users/1.jpg" alt="">
+                                <div class="div1">
+                                    <p>John Doe.</p>
+                                    <p>Johndoe@gmail.com</p>
+                                    <p>User</p>
+
+                                </div>
+                            </div>
+
+                            <div class="banner-c">
+                                <img src="https://picsum.photos/seed/car/500/500" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--cuadromodal-->
+    </div>
+
+
+
+
+
+
+
+
+
+</section>

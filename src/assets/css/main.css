@@ -1,0 +1,324 @@
+@charset "UTF-8";
+
+/* CSS Document */
+
+
+/*Author: Malcolm Córdova @malcolmcordova mercadocreativo@gmail.com www.malcolmcordova.com*/
+
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700');
+@import url("anim.css");
+@import url("animate.css");
+@import url("inicio.css");
+@import url("home.css");
+@import url("menufooter.css");
+@import url("header.css");
+@import url("menu-top-header.css");
+@import url("sliderhome.css");
+@import url("swiffy-slider.min.css");
+@import url("imageGalery.css");
+@import url("product.css");
+@import url("page.css");
+@import url("cardsmall.css");
+@import url("promociones.css");
+@import url("store.css");
+@import url("normalize.css");
+@import url("user.css");
+@import url("favorites.css");
+@import url("post-favorites.css");
+@import url("search.css");
+@import url("cart.css");
+@import url("pedidos.css");
+@import url("wallet.css");
+@import url("admin.css");
+@import url("category.css");
+
+/*@import url("pricing.css");*/
+
+@import url("shared.css");
+:root {
+    --dark-brown: #2c180e;
+    --lighter-brown: #F5F1EC;
+    --light-brown: #cbb18e;
+    --medium-brown: #a88f6c;
+    --green-gray: #beb8a5;
+    --white: #ffffff;
+    --shadow: 0px 7px 10px #2525253d;
+    --shadow-brown: 0px 7px 10px var(--dark-brown);
+    --fontFamily: 'Montserrat', sans-serif;
+    --linea-color: #CCB092;
+    --gris: #707070;
+    --grisclaro: #B8B8B8;
+    /* var(--dark-brown); */
+}
+
+body {
+    font-family: var(--fontFamily);
+}
+
+a,
+a:hover,
+a:active,
+a:focus {
+    color: var(--dark--brown) !important;
+    outline: none !important;
+    text-decoration: none !important;
+}
+
+p {
+    padding: 0;
+    margin: 0 0 30px 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+    font-family: var(--fontFamily);
+    font-weight: 400;
+    margin: 0 0 20px 0;
+    padding: 0;
+}
+
+*,
+*:after,
+*:before {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.clear {
+    clear: both;
+    visibility: hidden;
+    margin: 0px;
+    padding: 0px;
+    height: 0;
+}
+
+.nopadd {
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+img {
+    width: 100%;
+}
+
+.shadow {
+    box-shadow: var(--shadow);
+}
+
+.shadowup {
+    box-shadow: 0px -7px 10px #2525253d;
+}
+
+.shadow-red {
+    box-shadow: var(--shadow-red);
+}
+
+.w-60 {
+    width: 60%;
+}
+
+.center {
+    margin: auto;
+    width: 50%;
+    border: 3px solid green;
+    padding: 10px;
+}
+
+.gradient-dark-brown {
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#7db9e8+0,1e5799+100 */
+    background: rgb(125, 185, 232);
+    /* Old browsers */
+    background: -moz-linear-gradient(top, #3c2415) -10%, #000000 70%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #3c2415 -10%, #000000 70%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #3c2415 -10%, #000000 70%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#7db9e8', endColorstr='#1e5799', GradientType=0);
+    /* IE6-9 */
+}
+
+.post-inners2 {
+    width: 100%;
+    height: auto;
+    padding-bottom: 0px;
+    z-index: 90;
+    top: 15%;
+    position: relative;
+}
+
+.butonBack {
+    position: relative;
+    top: 50px;
+    ;
+    z-index: 30;
+}
+
+.butonBack .fa {
+    position: relative;
+    z-index: 9;
+    font-size: 34px;
+    top: 0;
+    left: 15px;
+    color: var(--lighter-brown);
+}
+
+.boton-brown {
+    display: inline-block;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #212529;
+    text-align: center;
+    text-decoration: none;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: var(--dark-brown);
+    padding: 10px;
+    color: var(--light-brown);
+    font-size: 18px;
+    border-radius: 14px;
+    /*    box-shadow: 0px 3px 10px var(--dark-brown);*/
+}
+
+.boton-brown::after {
+    content: "";
+    width: 96%;
+    height: 15%;
+    background-color: #6c4f3d;
+    position: absolute;
+    bottom: 0%;
+    left: 2%;
+    box-shadow: 0 5px 6px #6c4f3d;
+    z-index: -1;
+    border-radius: 80%;
+}
+
+.botonera {
+    display: grid;
+    gap: 0rem;
+    grid-auto-rows: 7rem;
+    grid-template-columns: 50% 1fr;
+    grid-auto-rows: max-content;
+    margin-top: 15px;
+}
+
+.botonera .btn-simple-gray,
+.botonera .btn-simple-gray-sm {
+    display: block;
+    width: calc(40vw);
+    font-size: 16px;
+    padding: 5px;
+    flex-basis: content;
+}
+
+.botonera .btn-outline-red,
+.botonera .btn-full-red,
+.botonera .btn-simple-gray,
+.botonera .btn-simple-gray-sm {
+    display: block;
+    width: 90%;
+    font-size: 16px;
+    padding: 5px;
+    flex-basis: content;
+}
+
+.btn-simple-gray {
+    text-align: center;
+    border-radius: 80px !important;
+    border: none !important;
+    background-color: var(--light-brown) !important;
+    color: var(--lighter-brown);
+    display: block;
+    margin: auto;
+    width: 90%;
+    padding: 10px;
+    font-size: 20px;
+    font-family: var(--fontFamily);
+}
+
+.btn-full-red {
+    text-align: center;
+    border-radius: 80px !important;
+    border: 1px solid var(--dark-brown) !important;
+    background-color: var(--dark-brown) !important;
+    color: var(--light-brown) !important;
+    display: block;
+    margin: auto;
+    width: calc(50vw);
+    padding: 10px;
+    font-size: 18px;
+    font-family: var(--fontFamily);
+}
+
+.btn-search {
+    text-align: center;
+    border-radius: 80px !important;
+    border: 1px solid var(--dark-brown) !important;
+    color: var(--dark-brown) !important;
+    font-size: 18px;
+    font-family: var(--fontFamily);
+}
+
+.shadowSearch {
+    width: 97%;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background: #fff;
+    padding: 15px;
+    border-radius: 14px;
+    box-shadow: 0px 7px 6px rgba(0, 0, 0, 0.3);
+}
+
+@media (min-width: 768px) {
+    .menu-top {
+        width: 80%;
+    }
+    .page {
+        margin-left: 20%;
+        width: 80%;
+    }
+    .header {
+        margin-left: 20%;
+        width: 80%;
+    }
+    .page .lineamedio {
+        width: 80vw;
+    }
+    .header .sidemenu {
+        transform: translate3d(0, 0, 0);
+        transition: 0.3s all;
+    }
+    .user .areablanc-interna,
+    .home .areablanc-interna,
+    .search .areablanc-interna,
+    .favorites .areablanc-interna,
+    .wallet .areablanc-interna {
+        width: 80vw;
+    }
+}
+
+@media (min-width: 576px) {
+    .col-sm-6,
+    .col-sm-4 {
+        float: left;
+    }
+}

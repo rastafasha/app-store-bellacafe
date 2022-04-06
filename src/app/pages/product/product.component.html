@@ -1,0 +1,74 @@
+<section class="productPage">
+    <div class="butonBack">
+        <a href="javascript:void(0)" (click)="goBack()"><i class="fa fa-angle-left"></i></a>
+    </div>
+    <a routerLink="/"><img class="logo animated fadeIn" src="./assets/svg/Logo-BellaCafeFinal.svg" alt=""></a>
+
+
+    <!--slideproduct-->
+    <div class="product-item  animated bounce">
+        <img src="http://localhost:3000/api/uploads/productos/{{productoSeleccionado.img}}" alt="">
+
+    </div>
+    <!--slideproduct-->
+    <!--cuadromodal-->
+    <div class="cuadro-modal isScroller">
+        <div class="lineamedio"></div>
+
+        <div class="card-body cardTitleProduct ">
+            <div class="div1 animated fadeInUp">
+                <h1>{{productoSeleccionado.titulo}}</h1>
+            </div>
+            <div class="div2 animated fadeInUp">
+                <div class="price">${{productoSeleccionado.precio_ahora}}</div>
+                <div class="reduceprice">${{productoSeleccionado.precio_antes}}</div>
+            </div>
+            <div class="div3 animated fadeInUp">
+                <h2>{{productoSeleccionado.detalle}}</h2>
+                <div class="stars">
+                    <ul>
+                        <li class="active"><i class="fa fa-star"></i></li>
+                        <li>4.5</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+        <div class="clear"></div><br><br>
+        <br>
+
+        <div class="info-product animated fadeInUp scrollable">
+            <h4>Description</h4>
+            <p></p>
+            <ul>
+                <li>Height</li>
+                <li>Widht</li>
+                <li>Weight</li>
+                <li>Color</li>
+                <li>Serie Number</li>
+                <li>Serie Code</li>
+                <li>Venta al Mayor</li>
+                <li>Multiple Products</li>
+                <li>Quantity Multiple Products</li>
+                <li>Compose Products</li>
+                <li>Quantity Compose Products</li>
+                <li>Photo gallery</li>
+                <li>Commentarios</li>
+                <li>Productos Relacionados</li>
+                <li>Add Favorites</li>
+            </ul>
+            <div class="botonera">
+                <a routerLink="/app/store">
+                    <div class="button btn-simple-gray">Add to Cart</div>
+                </a>
+                <a routerLink="/app/cart">
+                    <div class="button btn-full-red">Buy</div>
+                </a>
+            </div>
+        </div>
+
+    </div>
+    <!--cuadromodal-->
+
+
+</section>
